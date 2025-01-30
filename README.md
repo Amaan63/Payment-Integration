@@ -113,5 +113,3 @@ For any queries or contributions, please reach out via GitHub Issues.
 
 ---
 
-### **License**
-This project is licensed under the MIT License – feel free to use, modify, and distribute.
