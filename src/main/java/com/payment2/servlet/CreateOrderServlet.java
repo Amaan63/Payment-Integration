@@ -23,7 +23,7 @@ public class CreateOrderServlet extends HttpServlet {
                 throw new IllegalStateException("Session expired or missing payment information.");
             }
             int amountInPaise = (int) session.getAttribute("amountForBackend");
-            RazorpayClient client = new RazorpayClient("rzp_test_fJv9HsC1So1wiK", "Mva9ipIyqi0LHDMkkdXlGvlh");
+            RazorpayClient client = new RazorpayClient("Your_api_key", "Your_secret_key");
 
             // Create an order
             JSONObject orderRequest = new JSONObject();
