@@ -26,7 +26,7 @@
                         .then(response => response.json())
                         .then(data => {
                             const options = {
-                                key: "rzp_test_fJv9HsC1So1wiK", // Replace with your Razorpay API Key
+                                key: "your_api_key", // Replace with your Razorpay API Key
                                 amount: data.amount, // Amount in paise
                                 currency: "INR",
                                 name: "Car Parking Management",
