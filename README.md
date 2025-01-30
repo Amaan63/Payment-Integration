@@ -10,7 +10,6 @@ This project demonstrates a payment gateway integration in a Java web applicatio
 - Secure payment processing with Razorpay API.
 - Dynamic handling of payment amounts and transaction details.
 - Payment success and error handling pages.
-- Integration with a MySQL database for transaction records (optional).
 - Clean and modular code structure following MVC architecture.
 
 ---
@@ -18,7 +17,6 @@ This project demonstrates a payment gateway integration in a Java web applicatio
 ## **Technologies Used**
 - **Backend:** Java Servlets, JSP
 - **Frontend:** HTML, CSS, Bootstrap (for UI enhancements)
-- **Database:** MySQL (Optional for recording transactions)
 - **Payment Gateway:** Razorpay API
 - **Build Tool:** Maven
 - **Server:** Apache Tomcat
@@ -50,19 +48,16 @@ $ cd <project-directory>
    };
    ```
 
-### **3. Configure Database (Optional):**
-1. Create a MySQL database named `payment_db`.
-2. Run the SQL scripts located in the `database` folder to create the required tables.
-3. Update database connection details in `db-config.properties`.
 
-### **4. Deploy on Tomcat Server:**
+
+### **3. Deploy on Tomcat Server:**
 1. Build the project using Maven:
    ```bash
    $ mvn clean install
    ```
 2. Deploy the generated WAR file to Apache Tomcat.
 
-### **5. Run the Application:**
+### **4. Run the Application:**
 Access the application at:
 ```
 http://localhost:8080/payment-integration
@@ -84,11 +79,14 @@ Payment-Integration/
 ├── src/
 │   ├── main/
 │   │   ├── java/
-│   │   |   └── servlets/
-│   │   |       └── SuccessServlet.java
+│   │   │   └── servlets/
+│   │   │       ├── AmountSettingServlet.java
+│   │   │       ├── CreateOrderServlet.java
+│   │   │       └── VerifyPaymentServlet.java
 │   │   └── webapp/
 │   │       ├── index.jsp
 │   │       ├── payment.jsp
+│   │       ├── success.jsp
 │   │       └── error.jsp
 └── pom.xml
 ```
