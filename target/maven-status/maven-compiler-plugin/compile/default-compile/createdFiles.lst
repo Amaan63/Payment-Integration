@@ -1,0 +1,5 @@
+com\payment2\servlet\CreateOrderServlet.class
+com\payment2\JakartaRestConfiguration.class
+com\payment2\resources\JakartaEE8Resource.class
+com\payment2\servlet\AmountSettingServlet.class
+com\payment2\servlet\VerifyPaymentServlet.class
