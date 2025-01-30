@@ -32,7 +32,7 @@ public class VerifyPaymentServlet extends HttpServlet {
             options.put("razorpay_payment_id", paymentId);
             options.put("razorpay_signature", signature);
 
-            boolean isValid = Utils.verifyPaymentSignature(options, "Mva9ipIyqi0LHDMkkdXlGvlh");
+            boolean isValid = Utils.verifyPaymentSignature(options, "Your_secret_Key");
 
             // Send response based on validation
             if (isValid) {
